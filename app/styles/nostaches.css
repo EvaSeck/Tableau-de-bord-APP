@@ -1,0 +1,68 @@
+#nostaches{
+	overflow-x:auto; 
+  white-space: nowrap;
+	$BACKGROUND_COLOR_TABLEAU: #5BA4CF; background:$BACKGROUND_COLOR_TABLEAU;
+	$BOARD_PAGE_PADDING:0px; 
+	position:absolute; 
+  vertical-align: top;
+	top:$BOARD_PAGE_PADDING; 
+	bottom:$BOARD_PAGE_PADDING; 
+	left:$BOARD_PAGE_PADDING; 
+	right:$BOARD_PAGE_PADDING;
+	padding: 20px;
+
+
+
+
+.list{ 
+  display:inline­-block; 
+  $LIST_BACKGROUND_COLOR: #D2D7E5; 
+  background:$LIST_BACKGROUND_COLOR; 
+  width:300px; 
+  padding:10px; 
+
+.list­-item { 
+  margin­-bottom:20px; 
+  /**
+  *Pour que les cases ne débordent pas de la liste
+  */  
+  max-height: 80%; 
+  overflow-y: auto; 
+  $SCROLL_OFFSET:5px; 
+  padding-right:$SCROLL_OFFSET; 
+  margin-right:$SCROLL_OFFSET;
+}
+
+  &:not(:first­-child){ 
+    margin­-left:10px;
+}
+
+.list­-name{ 
+    padding:10px; 
+    border:none; 
+    background:transparent; 
+  } 
+
+  .ajouter­-case{ 
+  $ADD_TICKET_BACKGROUND_COLOR:linear­-gradient(to bottom,#61BD4F 0,#5AAC44 
+  background:$ADD_TICKET_BACKGROUND_COLOR; 
+  color:white; 
+  font­-weight: bold; 
+  border:none; 
+  padding:10px; 
+} 
+
+
+.case{ 
+  background:white; 
+  &:not(:first­-child) {
+    margin­-top: 10px; 
+  }
+  .case-titre{ 
+    width:100%; 
+    padding:20px;
+  }
+}
+
+}
+}

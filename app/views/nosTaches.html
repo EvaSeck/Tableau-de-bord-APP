@@ -1,1 +1,18 @@
-<p>Nos tâches.</p>
+<div id="nostaches" ng-dblclick= "addList()">
+
+<!-- Parcourir chaque liste et ainsi faire un binding avec les noms(name) -->
+	<div ng-repeat= "list in lists" class= "list"> <input class= "list-name" ngmodel= "list.name" /> 
+
+<!-- Parcourir les cases de chaque liste et ainsi faire un binding avec leur titre  -->
+		<div class= "list-item">
+			<div ng-repeat= "case in lists.cases" class= "case"> <input class= "case-titre" ngmodel	= "case.titre" />
+			</div>
+		</div> 
+
+<!-- Ajouter un bouton au tableau Trello afin de pouvoir par la suite ajouter une case à la liste -->
+
+		<button class="ajouter-case"> Ajouter une case </button>
+	</div>
+</div>
+
+
